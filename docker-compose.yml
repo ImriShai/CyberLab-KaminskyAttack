@@ -33,6 +33,12 @@ services:
         volumes:
                 - ./volumes:/volumes
         network_mode: host
+        command: >
+            bash -c "
+            /etc/init.d/openbsd-inetd start &&
+            apt update &&
+            apt install -y gcc &&
+            tail -f /dev/null"
 
     attacker_ns:
         build: ./image_attacker_ns
