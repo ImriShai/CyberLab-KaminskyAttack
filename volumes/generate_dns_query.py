@@ -1,3 +1,5 @@
+# The creation of the scapy packet to be sent to the DNS server taken from here: https://scapy.readthedocs.io/en/latest/api/scapy.layers.dns.html the scapy documentation and the lab instructions
+
 #!/usr/bin/python3
 from scapy.all import *
 

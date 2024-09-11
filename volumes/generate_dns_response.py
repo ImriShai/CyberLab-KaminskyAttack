@@ -1,4 +1,4 @@
-
+# The creation of the scapy packet to be sent to the DNS server taken from here: https://scapy.readthedocs.io/en/latest/api/scapy.layers.dns.html the scapy documentation and the lab instructions
 from scapy.all import *
 
 # Construct the DNS header and payload
